@@ -1,4 +1,4 @@
-package sLogger
+package simplelogger
 
 import (
 	"fmt"

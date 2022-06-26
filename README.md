@@ -1,14 +1,14 @@
-# sLogger
+# simplelogger
 
-sLogger, or (simple)Logger is a small and simple logger with no external dependencies. sLogger provides a basic logger API with
-useful configuration options such as log level, times stamping and color output.
+simplelogger is a small logger with no external dependencies. It provides a basic logger API with
+useful configuration options such as log level, time-stamping and color output.
 
 ## Usage
-Simply call the `GetLogger` function and provide a `LoggerOptions` struct to configure sLogger:
+Simply call the `GetLogger` function and provide a `LoggerOptions` struct to configure simplelogger:
 
 ```go
-  logger := sLogger.GetLogger(sLogger.LoggerOptions{
-    LogLevel:            sLogger.LogLevelInfo,
+  logger := simplelogger.GetLogger(simplelogger.LoggerOptions{
+    LogLevel:            simplelogger.LogLevelInfo,
     WithTimeStamps:      true,
     WithColorizedOutput: true,
   })
@@ -21,7 +21,7 @@ Simply call the `GetLogger` function and provide a `LoggerOptions` struct to con
 ```
 
 ## Log level
-sLogger supports 7 different log levels with increasing severity:
+simplelogger supports 7 different log levels with increasing severity:
 ```go
   LogLevelVerbose   // lowest severity
   LogLevelDebug
@@ -32,8 +32,8 @@ sLogger supports 7 different log levels with increasing severity:
   LogLevelSilent
 ```
 
-Setting the log level to `LogLevelWarn` will, for example, suppress all `LogLevelVerbose, LogLevelDebug, LogLevelInfo` logs.
+Setting the log level to `LogLevelWarn` will, for example, suppress all `LogLevelVerbose`, `LogLevelDebug`, `LogLevelInfo` logs.
 
 ## Contributing
-Please feel free to fork, extend and improve sLogger. Any contributions are appreciated.
+Please feel free to fork, extend and improve simplelogger. Any contributions are appreciated.
 
