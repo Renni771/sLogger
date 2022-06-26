@@ -3,6 +3,12 @@
 simplelogger is a small logger with no external dependencies. It provides a basic logger API with
 useful configuration options such as log level, time-stamping and color output.
 
+## Installation
+Run the following to install simplelogger:
+```shell
+$ go get -u github.com/Renni771/simplelogger
+```
+
 ## Usage
 Simply call the `GetLogger` function and provide a `LoggerOptions` struct to configure simplelogger:
 
